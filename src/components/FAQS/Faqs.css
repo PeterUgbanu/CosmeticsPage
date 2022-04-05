@@ -1,0 +1,43 @@
+.faqs{
+    padding:  85px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.faqs > h1{
+    font-family: var(--headerFont);
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 130%;
+    /* or 57px */
+    text-align: center;
+    color: #2D1D61;
+}
+.faq {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 1200px) {
+    .faqs {
+        padding:  65px 20px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .faq {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .faqs {
+        padding:  45px 70px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .faqs {
+        padding:  45px 20px;
+    }
+    .faqs > h1 {
+        font-size: 30px;
+        line-height: 100%;
+    }
+}

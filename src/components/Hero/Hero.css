@@ -1,0 +1,247 @@
+.hero-container {
+    display: grid;
+    place-content: center;
+}
+.hero {
+    background-image: url(../../assets/Vector632.svg);
+    background-repeat: no-repeat;
+    padding: 2rem 6rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 145px;
+}
+
+.hero-content__free-delivery {
+    background-color: #FFDAD7;
+    border: 1px solid #FCC7C3;
+    border-radius: 50px;
+    width: 260px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+
+.hero-content__free-delivery p {
+    font-family: var(--textFont);
+    font-size: 12px;
+    line-height: 16px;
+    color: #524439;
+    padding: 20px;
+}
+
+.hero-content__free-delivery div {
+    margin-top: 10px;
+}
+
+.hero-content__free-delivery img {
+    width: 100%;
+}
+
+.hero-content__header {
+    font-family: var(--headerFont);
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 86px;
+    letter-spacing: -0.07em;
+    max-width: 568px;
+    max-height: 258px;
+    color: #292019;
+    margin-bottom: 8px;
+}
+
+.hero-content__text {
+    font-family: var(--textFont);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    max-width: 372px;
+    max-height: 68px;
+    color: #000000;
+    opacity: 0.4;
+    margin-bottom: 30px;
+}
+
+.hero-content__action {
+    height: 72px;
+    display: flex;
+    align-items: center;
+}
+.hero-content__action button {
+    width: 168px;
+    height: 60px;
+    background: #B91122;
+    border-radius: 8px;
+    font-family: var(--textFont);
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+
+.hero-content__action div {
+    display: flex;
+    align-items: center;
+    width: 207px;
+    height: 56px;
+}
+
+.hero-content__action img {
+    width: 54.19px;
+    margin-right: 24px;
+}
+
+.hero-content__action p {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.4;
+}
+
+.hero-image {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+.hero-card {
+    background-color: #fff8e7;
+    max-width: 275px;
+    border-radius: 10px;
+    padding: 50px 86px 56px 63px;
+}
+
+.rating-card p {
+    font-family: var(--textFont);    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.4;
+    margin-bottom: 10px;
+}
+
+.rating-card h2 {
+    font-family: var(--headerFont);
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 40px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.rating-card h3 {
+    font-family: var(--headerFont);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 2px;
+}
+
+.hero-card > div > button {
+    display: flex;
+    width: 90px;
+    height: 40px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #857f7b;
+    border-radius: 50px;
+    margin-top: 45px;
+    background-color: #f7f3e8;
+}
+
+.hero-card > div > button > hr {
+    width: 1px;
+    height: 40px;
+    background-color: #857f7b;
+}
+
+@media screen and (max-width: 1050px) {
+    .hero {
+        background-image: unset;
+        padding: 2rem 4.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-content {
+        padding-top: 35px;
+    }
+    .hero-content__header {
+        font-size: 100px;
+        max-width: 100%; 
+    }
+    .hero-content__text {
+       max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .hero-image > div > img {
+        width: 100%;
+    }
+    .hero-card {
+        background-color: #fff8e7;
+        max-width: 100%;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    .hero-image {
+        flex-direction: column;     
+    }
+    .hero-card {
+        padding: 50px;
+    }
+    .hero-content {
+        margin-bottom: 30px;
+    }
+    .hero-content__header {
+        font-size: 50px; 
+        line-height: 50px;
+    }
+    .hero-content__text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .hero-content__action {
+        width: 100%;
+    }
+    .hero-content__action button {
+        width: 50%;
+        height: 50px;
+    }
+    
+      .hero-content__action div {
+        width: 50%;
+    } 
+    
+    .hero-content__action img {
+        width: 30px;
+        margin-right: 10px;
+    }
+    
+    .hero-content__action p {
+        font-size: 12px;
+    } 
+}
+
+@media screen and (max-width: 300px) {
+    
+}

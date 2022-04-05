@@ -1,0 +1,161 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h3 {
+    font-family: var(--textFont);
+    font-weight: 700;
+    font-size: 1.15rem;
+    line-height: 1.8rem;
+    color: #000;
+    margin-left: 30px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.menu li,
+.mobile-menu li {
+    margin-right: 42px;
+    font-family: var(--textFont);
+    font-weight: 500;
+    font-size: 1.15rem;
+    line-height: 1.8rem;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.icons {
+    display: flex;
+    align-items: flex-start;
+}
+.icons > .badge-container > .badge {
+    width: 15px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+.icons > .badge-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.icons > div {
+    margin-right: 25px;
+    font-size: 1.2rem;
+}
+
+.navbar-menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.mobile-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 10000;
+    text-align: end;
+    background: #fff;
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 3px 7px 10px rgba(0,0, 0,0.2);
+}
+
+.mobile-menu li {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1050px) {
+    .navbar {
+        padding: 1.5rem 2.5rem;
+    }
+    .menu li {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .navbar {
+        padding: 1.5rem;
+    }
+    .logo h3{
+        font-size: 1.3rem;
+    }
+    .menu {
+        display: none;
+    }
+    .menu li {
+        margin-right: 20px;
+        font-size: .8rem;
+    }
+    .navbar-menu {
+        display: flex;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    .navbar {
+        padding: 1rem;
+    }
+    .navbar-menu_container {
+        top: 20px;
+    }
+    .icons svg {
+        margin-right: 15px;
+        font-size: .8rem;
+    }
+    .logo h3{
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .icons {
+        display: none;
+    } 
+    .mobile-menu {
+        width: auto;
+        padding: 5px;
+    }
+    .navbar {
+        padding: 0;
+    }
+}

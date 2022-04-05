@@ -1,0 +1,47 @@
+.products {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 6rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.product-review {
+    padding-top: 83px;
+    padding-bottom: 62px;
+    padding-left: clamp(2%, 5%, 250px);
+    padding-right: clamp(2%, 5%, 250px);
+    max-width: 1200px;
+    text-align: center;
+}
+.product-review > h1 {
+    font-family: var(--headerFont);
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 76px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    color: #292019;
+}
+.product-review > p {
+    font-family: var(--textFont);
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #72696A;
+} 
+
+@media screen and (max-width: 960px) {
+    .products {
+        padding: 1rem 10%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .product-review > h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}

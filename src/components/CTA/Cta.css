@@ -1,0 +1,102 @@
+.cta-container {
+    display: grid;
+    place-content: center;
+    width: 100%;
+}
+.cta {
+    background-image: url(../../assets/ctaBackground.svg);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 56px 85px;
+    position: relative;
+}
+.cta .content {
+    max-width: 462px;
+    width: 100%;
+    margin-right: 100px;
+}
+.cta .content > h2 {
+    font-family: var(--headerFont);
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    color: #00566B;
+    margin-bottom: 12px;
+}
+.cta .content > p {
+    font-family: var(--textFont);
+    font-style: normal;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    opacity: 0.8; 
+}
+.cta .img > img {
+    position: absolute;
+    top: -70px;
+}
+.cta > div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.cta button {
+    background: #FFFFFF;
+    box-shadow: 0px 20px 50px -16px rgba(41, 119, 138, 0.3);
+    border-radius: 10px;
+    max-width: 150px;
+    min-width: 100px;
+    height: 60px;
+    font-family: var(--textFont);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #071440;
+    margin-left: 186px;
+    margin-top: 50px;
+}
+@media screen and (max-width: 1200px) {
+    .cta {
+        margin: 40px;
+        padding: 40px;
+    }
+   .cta button {
+       margin-top: -10%;
+   } 
+}
+@media screen and (max-width: 1050px) {
+    .cta {
+        margin: 20px;
+        padding: 20px;
+    }
+    .cta .content {
+        margin-right: 70px;
+    }
+    .cta button {
+        margin-left: 120px;
+    }
+    .cta .img {
+        display: none;
+    }
+}
+@media screen and (max-width: 960px) {
+    
+    .cta .content {
+        margin-right: 20px;
+    }
+    .cta .content > h2 {
+        font-size: 30px;
+        line-height: 25px;
+    }
+    .cta .content > p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .cta button {
+        margin-left: 40px;
+    }
+}
